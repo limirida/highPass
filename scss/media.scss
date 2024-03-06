@@ -1,0 +1,9 @@
+@media (min-width: 992px) and(max-width:1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .header-menu__item:not(:last-child) {
+    margin-right: 33px;
+  }
+}

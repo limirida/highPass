@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hight pass</title>
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/justValidateTooltip.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш-API-ключ&lang=ru_RU"></script>
+
+</head>
+
+<body>
+  <header class="header dark-gray">
+    <div class="header-container container flex">
+      <a href="#" class="header-logo header-container__item">
+        <img src="images/logo.svg" alt="Hight pass - вернуться на главную">
+      </a>
+      <nav class="header-menu header-container__item menu">
+        <button class="menu-btn burger" aria-label="Открыть меню">
+          <svg class="burger-icon">
+            <use xlink:href="images/sprite.svg#header-burger"></use>
+          </svg>
+        </button>
+        <div class="header-menu__mobil menu-mobil">
+          <div class="menu-mobil__wrap">
+            <button class="header-menu__close" aria-label="закрыть меню">
+              <svg>
+                <use xlink:href="images/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <ul class="header-menu__list flex">
+              <li class="header-menu__item"><a href="#" class="header-menu__link">О студии</a></li>
+              <li class="header-menu__item"><a href="#" class="header-menu__link">Наши проекты</a></li>
+              <li class="header-menu__item"><a href="#" class="header-menu__link">Услуги</a></li>
+              <li class="header-menu__item"><a href="#" class="header-menu__link">Мастер-классы</a></li>
+              <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="menu-mobil__phone">
+            <a href="tel:+749542423532" class="text-orange">
+              <svg>
+                <use xlink:href="images/sprite.svg#header-phone"></use>
+              </svg>+7&nbsp;495&nbsp;424-23-532</a>
+          </div>
+
+        </div>
+      </nav>
+      <div class="header-form search header-container__item">
+        <button class="header-form__search search-button" aria-label="Открыть поиск">
+          <svg>
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <form action="/" class="header-search form flex">
+          <label for="header-search search">
+            <span class="visually-hidden">Поиск по сайту</span></label>
+          <input class="header-search__input" type="text" name="header-search" id="header-search"
+            placeholder="Поиск по сайту">
+          <button class="search-button" aria-label="искать">
+            <svg>
+              <use xlink:href="images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <h1 class="main-heading visually-hidden">студия фотoграфии High pass</h1>
+    <section class="general">
+      <div class="general-container container">
+        <div class="general-wrap">
+          <article class="general-article article flex text-white">
+            <span class="article-hashtag hashtag">#мастеркласс</span>
+            <div class="article-content general-article__content">
+              <p class="article-text ">Мастер-класс от Игоря Робова</p>
+              <h2 class="article-heading">Неоновый фотосет 2.0 7 июля 20:00</h2>
+              <a href="#" class="article-link button-orange">Узнать больше</a>
+            </div>
+          </article>
+          <div class="general-gallery">
+            <h2 class="general-gallery__heading heading heading-black">Работы участников предыдущего мастер-класса</h2>
+            <div class="general-photo">
+              <picture class="general-photo__item photo-big">
+                <source srcset="images/photo-2.avif" type="image/avif" media="(min-width: 1200px)">
+                <source srcset="images/photo-2.webp" type="image/webp" media="(min-width: 1200px)">
+                <source srcset="images/photo-2.jpg" media="(min-width: 1200px)">
+                <source srcset="images/photo-2-1024.avif" type="image/avif" media="(min-width: 870px)">
+                <source srcset="images/photo-2-1024.webp" type="image/webp" media="(min-width: 870px)">
+                <source srcset="images/photo-2-1024.jpg" media="(min-width: 870px)">
+                <source srcset="images/photo-2-768.avif" type="image/avif" media="(min-width: 400px)">
+                <source srcset="images/photo-2-768.webp" type="image/webp" media="(min-width: 400px)">
+                <source srcset="images/photo-2-768.jpg" media="(min-width: 400px)">
+                <img src="images/photo-2-320.jpg" alt="фотография девушки">
+              </picture>
+              <picture class="general-photo__item photo">
+                <source srcset="images/photo-3.avif" type="image/avif" media="(min-width: 1200px)">
+                <source srcset="images/photo-3.webp" type="image/webp" media="(min-width: 1200px)">
+                <source srcset="images/photo-3.jpg" media="(min-width: 1200px)">
+                <source srcset="images/photo-3-1024.avif" type="image/avif" media="(min-width: 870px)">
+                <source srcset="images/photo-3-1024.webp" type="image/webp" media="(min-width: 870px)">
+                <source srcset="images/photo-3-1024.jpg" media="(min-width: 870px)">
+                <source srcset="images/photo-3-768.avif" type="image/avif" media="(min-width: 400px)">
+                <source srcset="images/photo-3-768.webp" type="image/webp" media="(min-width: 400px)">
+                <source srcset="images/photo-3-768.jpg" media="(min-width: 400px)">
+                <img src="images/photo-3-320.jpg" alt="фотография девушки">
+              </picture>
+              <picture class="general-photo__item photo">
+                <source srcset="images/photo-4.avif" type="image/avif" media="(min-width: 1200px)">
+                <source srcset="images/photo-4.webp" type="image/webp" media="(min-width: 1200px)">
+                <source srcset="images/photo-4.jpg" media="(min-width: 1200px)">
+                <source srcset="images/photo-4-1024.avif" type="image/avif" media="(min-width: 870px)">
+                <source srcset="images/photo-4-1024.webp" type="image/webp" media="(min-width: 870px)">
+                <source srcset="images/photo-4-1024.jpg" media="(min-width: 870px)">
+                <source srcset="images/photo-4-768.avif" type="image/avif" media="(min-width: 400px)">
+                <source srcset="images/photo-4-768.webp" type="image/webp" media="(min-width: 400px)">
+                <source srcset="images/photo-4-768.jpg" media="(min-width: 400px)">
+                <img src="images/photo-4-320.jpg" alt="фотография девушки">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

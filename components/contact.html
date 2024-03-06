@@ -1,0 +1,57 @@
+<section class="contact">
+  <div class="container">
+    <h2 class="contact-heading heading heading-dark">Контакты</h2>
+    <div class="contact-wrap">
+      <div class="map" id="map">
+        <div class="contact-map map-info">
+          <button class="map-info__close" aria-label="закрыть адрес">
+            <svg>
+              <use xlink:href="images/sprite.svg#close"></use>
+            </svg>
+          </button>
+
+          <div class="map-info__address">
+            <div class="map-info__item">
+              <h3 class="map-info__heading text-white">Студия «High pass»</h3>
+            </div>
+            <address class="map-info__address text-gray">107045, Москва, Даев переулок, дом&nbsp;41,<span class="map-info__span">&nbsp;</span><span class="map-info__space"> </span>бизнес-центр
+              &laquo;Даев Плаза&raquo;, этаж&nbsp;8, офис&nbsp;&#8470;&nbsp;82
+              <div class="map-info__wraper">
+                <a href="tel:+749542423532" class="map-info__phone textS-orange">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#header-phone"></use>
+                  </svg>+7&nbsp;495&nbsp;424-23-532</a>
+              </div>
+            </address>
+          </div>
+        </div>
+
+      </div>
+      <div class="contact-application application">
+        <form action="/" class="contact-application__form application-form flex" autocomplete="off"
+          id="application-form" novalidate="novalidate">
+          <h3 class="application-heading heading">Оставить заявку</h3>
+          <p class="application-text">Оставьте ваши данные, указав в графе «Комментарий» желаемые время и дату съёмки
+            или другого мероприятия</p>
+          <div class="application-form__item">
+            <label class="visually-hidden" for="application-name">Имя</label>
+            <input type="text" id="application-name" class="application-form__input application-form__input--name"
+              data-validate-field="name" required placeholder="Имя">
+          </div>
+          <div class="application-form__item"><label class="visually-hidden" for="application-mail">Email</label>
+            <input type="email" id="application-mail" class="application-form__input application-form__input--email"
+              placeholder="Email" data-validate-field="mail" required>
+          </div>
+          <div class="application-form__item">
+            <label class="visually-hidden" for="application-comment">Комментарий</label>
+            <textarea id="application-comment" class="application-form__input application-form__input--comment"
+              placeholder="Комментарий"></textarea>
+          </div>
+          <button class="application-form__button button-orange" type="submit">Отправить</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>

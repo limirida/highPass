@@ -1,0 +1,519 @@
+[class*="ground-pane"] {
+  filter: grayscale(1)
+}
+
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 66% 31.5%;
+  gap: 30px;
+}
+.contact {
+  padding-bottom: 68px;
+}
+
+.contact-map {
+  position: relative;
+  // max-height: 460px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.map-info__address {
+  max-width: 273px;
+}
+.map-info__space{
+  display: none;
+}
+
+.contact-map {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 440px;
+  padding: 20px 60px 148px 60px;
+  background: rgba(32, 32, 32, 0.85);
+  z-index: 10;
+  transition: transform 0.6s ease-in;
+}
+
+.placemark {
+  width: 12px;
+  height: 12px;
+}
+
+
+svg.eclipce {
+  width: 10px;
+  height: 10px;
+}
+
+.contact-heading {
+  margin-bottom: 22px;
+}
+
+
+.application-heading.heading {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: -6px;
+  margin-bottom: 5px;
+}
+
+.application-text {
+  color: #999;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 14px;
+
+}
+
+.application-form {
+  flex-direction: column;
+  justify-content: space-between;
+
+  .js-validate-error-label {
+    top: 0;
+    background: none;
+  }
+}
+
+.application-form__input {
+  display: inline-block;
+  width: 100%;
+  background: #E9E9E9;
+  border: none;
+  padding: 14px 23px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid transparent;
+  transition: .2s ease-in-out;
+
+  &::placeholder {
+    color: #999;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: .2s ease-in-out;
+  }
+}
+
+.application-form__input:hover:not(:focus-visible) {
+  &::placeholder {
+    color: #FF6E30;
+  }
+}
+
+.application-form__input:focus,
+.application-form__input:focus-visible {
+  border: 1px solid #FF6E30;
+
+  &::placeholder {
+    color: #999;
+  }
+}
+
+.application-form__input:active:not(:focus-visible) {
+  border: 1px solid transparent;
+  color: #202020;
+}
+
+.application-form__item:not(:nth-child(3)) {
+  margin-bottom: 21px;
+  position: relative;
+}
+
+.application-form__item:nth-child(3) {
+  margin-bottom: 16px;
+}
+
+.application-form__input--comment {
+  height: 150px;
+}
+
+.application-form__button.button-orange {
+  max-width: 126px;
+  color: #FFF;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.map-info__close {
+  position: absolute;
+  top: 19px;
+  right: 21px;
+  width: 20px;
+  align-self: flex-end;
+}
+
+.map-info__close {
+  text-align: right;
+  padding: 0;
+  background: none;
+  border: none;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: gray;
+    transition: .2s ease-in-out;
+  }
+}
+
+.map-info__close:hover:not(:focus-visible) svg,
+.header-menu__close:hover:not(:focus-visible) svg {
+  fill: #FF6E30;
+}
+
+.map-info__close:focus-visible svg,
+.header-menu__close:focus svg {
+  fill: #BC572B;
+}
+
+.map-info__close:active:not(:focus-visible) svg,
+.header-menu__close:active:not(:focus-visible) svg {
+  fill: #CE4307;
+}
+
+.map-info__heading {
+  color: #FFF;
+  margin-bottom: 5px;
+  font-family: TT Firs Neue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.map-info__address {
+  color: #CACACA;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.map-info__wrap--phon {
+  display: block;
+}
+
+.map-info__phone {
+  svg {
+    width: 22px;
+    height: 18px;
+  }
+
+  text-align: center;
+  color: #FF6E30;
+  font-family: TT Firs Neue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.map-info__phone-desktop {
+  display: flex;
+}
+
+.map-info__phone-tablet {
+  display: none;
+}
+
+.map-info__wraper {
+  display: flex;
+
+}
+
+@media (max-width:1200px) {
+  .contact-wrap {
+    grid-template-columns: 61.5% 35.5%;
+  }
+
+
+  .header-menu__close {
+    margin-top: -4px;
+  }
+.map-info__phone{
+  padding-left: 2px;
+}
+
+  .map-info {
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    padding: 24px 20px 22px 30px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .map-info__phone-tablet {
+    display: inline-block;
+    margin-left: 4px;
+  }
+
+  .map-info__phone-desktop {
+    display: none;
+  }
+
+  .map-info__address {
+    max-width: 100%;
+    max-width: 314px;
+
+    svg {
+      margin-bottom: -4px;
+    }
+  }
+
+  .contact{
+    padding-bottom: 67px;
+  }
+
+  .map-info__wraper {
+    display: inline;
+    padding-left: 3px;
+  }
+}
+
+@media (max-width:870px) {
+  .contact-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .map-info__address {
+    max-width: 436px;
+  }
+
+  .map-info__phone-tablet {
+    padding-top: 4px;
+    margin-left: 0;
+  }
+
+  .contact-application {
+    max-width: 65%;
+  }
+
+
+  .map-info__wraper {
+    display: block;
+    padding-left: 0;
+  }
+
+  .footer-quote {
+    display: none;
+  }
+
+  .map-info__close {
+    margin-top: 0;
+  }
+
+  .map {
+  height: 460px;
+  }
+
+  .application-form__item:nth-child(3) {
+    margin-bottom: 23px;
+  }
+
+  .application-form__item:not(:nth-child(3)) {
+    margin-bottom: 18px;
+    position: relative;
+  }
+}
+
+@media (max-width:670px) {
+  .contact-heading{
+    padding-left: 0;
+  }
+  .contact .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .map-info__address {}
+
+  .map-info__heading {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .map-info__phone-tablet {
+    padding-top: 8px;
+  }
+
+  .map-info__address {
+    width: 100%;
+  }
+
+  .map-info__address {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    max-width: 60%;
+    display: block;
+  }
+
+  .contact-heading {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  .map-info__phone {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .map-info {
+    width: 100%;
+    padding: 23px 18px 20px 18px;
+    flex-direction: row;
+
+  }
+
+  .map-info__phone-tablet {
+    display: block;
+    text-align: left;
+  }
+
+  .application-heading.heading {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
+
+  .contact-application {
+    max-width: calc(100% - 41px);
+    margin: 0 auto;
+  }
+
+  .application-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .application-form__input {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 12px 23px;
+
+  }
+
+  .application-form__button.button-orange {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 115px;
+  }
+
+
+  .application-form__input:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .contact{
+    padding-bottom: 50px;
+  }
+
+
+  .map-info__item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+
+  .map-info__address {
+    max-width: 100%;
+  }
+
+  .application-form__item:nth-child(3) {
+    margin-bottom: 13px;
+  }
+
+  .js-validate-error-field {
+    border: 1px solid #F06666;
+  }
+
+  .contact-heading {
+    margin-bottom: 13px;
+  }
+
+  .map {
+    min-height: 472px;
+  }
+
+  .map-info {
+    width: 100%;
+    padding: 23px 18px 16px 18px;
+  }
+
+  .map-info__wraper {
+    margin-top: 10px;
+  }
+
+  .contact-wrap {
+    gap: 23px;
+  }
+
+  .application-form__item:nth-child(3) {
+    margin-bottom: 18px;
+  }
+
+  .application-form__input::placeholder {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .application-form__item:not(:nth-child(3)) {
+    margin-bottom: 16px;
+  }
+  .map-info__span{
+    display: none;
+  }
+  .map-info__space{
+    display: block;
+  }
+  .map-info__phone{
+   padding: 0;
+  }
+}
